@@ -1,7 +1,25 @@
 aid: yetcargo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/yetcargo.png
 name: Yetcargo
-description: Yetcargo is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Yetcargo is a Mexican freight and cargo transportation company that connects
+  businesses needing to move goods with a network of reliable carriers, handling both
+  local and long-distance (foráneo) shipments. Operating a Spanish-language web platform,
+  it positions itself as a trusted cargo-transport provider ("Tu proveedor confiable
+  de transporte de carga") for shippers who need to resolve local and out-of-town
+  delivery problems. Yetcargo was surfaced through the 500 Global portfolio and added
+  to the API Evangelist network; as of this enrichment pass it publishes no public
+  API, developer portal, or machine-readable API specification.
 url: https://raw.githubusercontent.com/api-evangelist/yetcargo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Logistics
+- Freight
+- Transportation
+- Cargo
+- Shipping
+- Supply Chain
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/yetcargo-domain-security.yml
 - type: Website
   url: https://yetcargo.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
